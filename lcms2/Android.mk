@@ -23,7 +23,7 @@ LOCAL_NDK_STL_VARIANT := gnustl_static
 LOCAL_C_INCLUDES := $(LOCAL_PATH) \
 	$(LOCAL_PATH)/include
 
-LOCAL_CFLAGS := -DAVOID_TABLES -O3 -fstrict-aliasing -fprefetch-loop-arrays \
+LOCAL_CFLAGS := -DAVOID_TABLES -O3 -fno-strict-aliasing -fprefetch-loop-arrays \
 	-DANDROID_TILE_BASED_DECODE -DENABLE_ANDROID_NULL_CONVERT -D__Ansi__
 
 LOCAL_LDLIBS := -lz
